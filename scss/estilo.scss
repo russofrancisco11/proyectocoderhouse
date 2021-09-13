@@ -1,0 +1,141 @@
+@import "./variables";
+@import "./backgrounds";
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    " . presentacion presentacion presentacion . "
+    " . article article article . "
+    " . section section section . "
+    "imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes"
+    "footer footer footer footer footer";
+    grid-template-rows: 20vh auto auto auto auto 20vh;
+    grid-template-columns: 10vw auto auto auto 10vw;
+}
+
+.header{
+    grid-area: header;
+}
+
+.presentacion{
+    grid-area: presentacion;
+    margin: 5px 0px;
+    &__video{
+        width: 100%;
+        min-height: 700px;
+    }
+}
+
+.article{
+    grid-area: article;
+    border: solid 3px;
+    padding: 3px;
+    &__p{
+        margin: 5px;
+    }
+    &__ul{
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+}
+
+.formularioAdmision{
+    grid-area: section;
+    border: solid 3px;
+    margin: 5px;
+    div{
+        margin: 5px;
+    }
+}
+
+.imagenesDeExamenes{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px;
+    grid-area: imagenesDeExamenes;
+    &__imagen{
+        max-width: 22vw;
+    }
+}
+
+.piePagina{
+    display: flex;
+    flex-direction: row;
+    height: 22vh;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer;
+    &__ul{
+        list-style-type: none;
+        color: $color-letra;
+        margin: 3px 0px;
+    }
+    &__a{
+        text-decoration: none;
+        color: $color-letra;
+    }
+    &__a:hover{
+        color: $color-letra;
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    .encabezado{
+        font-size: $tamaño-letra-grande*0.75;
+    }
+
+    .piePagina{
+        font-size: $tamaño-letra-grande*0.75;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .grilla{
+        grid-template-areas: 
+        "header"
+        "presentacion"
+        "article"
+        "section"
+        "footer";
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+    }
+
+    .encabezado{
+        &__navegacion{
+            width: 65%;
+            justify-content: flex-start;
+            &__a{
+                font-size: $tamaño-letra-grande*0.65;
+            }
+        }
+        &__logoShakespeare{
+            display: none;
+        }
+        &__escudoShakespeare{
+            display: block;
+            margin-left: 1rem;
+        }
+    }
+
+    .imagenesDeExamenes{
+        display: none;
+    }
+
+    .piePagina{
+        font-size: $tamaño-letra-grande*0.65;
+        &__p{
+            display: none;
+        }
+    }
+}

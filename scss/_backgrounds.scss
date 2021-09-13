@@ -1,0 +1,11 @@
+$clases:(
+    header: #003566,
+    imagenesDeExamenes: #ababfa,
+    piePagina: #003566
+);
+
+@each $clase, $color in $clases {
+    .#{$clase}{
+        background-color: $color;
+    }
+}

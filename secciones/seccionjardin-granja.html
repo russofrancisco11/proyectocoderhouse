@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página correspondiente al Jardín-Granja del colegio William Shakespeare-San Agustín localizado en Temperley, provincia de Buenos Aires">
+    <meta name="keywords" content="COLEGIO, WILLIAM, SHAKESPEARE, SAN, AGUSTIN, JARDÍN">
+    <title> Jardín-Granja - Colegio William Shakespeare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/scss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="grilla">
+          <header class="header">
+            <nav class="navbar navbar-light fixed-top" style="background-color: #003566; height: 20vh;">
+                <div class="container-fluid">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                          <img src="imagenes/imagenlogoshakespeare.png" alt="">
+                        </a>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="color: #fafafa;">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Niveles
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                              <li><a class="dropdown-item" href="secciones/seccionjardin-granja.html">Jardín-Granja</a></li>
+                              <li><a class="dropdown-item" href="secciones/seccionprimaria.html">Primaria</a></li>
+                              <li><a class="dropdown-item" href="secciones/seccionsecundaria.html">Secundaria</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="secciones/seccionoldshakesperians.html">Old Shakespearians</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+          </header>
+            <section class="presentacion">
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#presentacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#presentacion" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#presentacion" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../imagenes/imagenJardin.jpg" class="d-block w-100" alt="ImagenJardin">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/imagenJardin1.jpg" class="d-block w-100" alt="ImagenJardin1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/imagenJardin2.jpg" class="d-block w-100" alt="ImagenJardin2">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#presentacion" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#presentacion" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+            </section>
+            <article class="article">
+                <p  class="article__p">
+                A partir de proyectos dinámicos y creativos nuestro jardín promueve áreas de trabajo como pintura, dibujo, construcción, canto, literatura, expresión corporal y juego dramático.
+                </p>
+                <p  class="article__p">
+                Las  instalaciones y espacios están especialmente diseñados y equipados para brindar un ambiente estimulante y seguro que potencie el desarrollo de nuestros alumnos.
+                </p>
+                <ul  class="article__ul">
+                    <li> <strong>GRANJA + HUERTA</strong> | Nuestro campo de deportes incluye 1 ha. con una gran variedad de animales y plantas donde los alumnos tienen un contacto directo con la naturaleza, aprenden a cuidar y valorar a los seres vivos y desarrollan un fuerte compromiso con el medio ambiente.</li>
+                    <li> <strong>IDIOMAS</strong> | Esta etapa evolutiva resulta ideal para introducir una segunda lengua. Desde temprana edad nuestros alumnos comienzan a adquirir el idioma inglés de manera natural, en forma paralela al español, sin ningún tipo de inhibición y consolidando la base de una fonología cercana a la del hablante nativo.</li>
+                    <li> <strong>HORARIOS</strong> | Salas de 3 y 4: turno mañana de 8 a 12 hs. | turno tarde de 13 a 17 hs. | jornada completa opcional de 8 a 17 hs. Sala de 5: jornada completa obligatoria de 8 a 16.30 hs.</li>
+                </ul>
+            </article>
+            <section class="formularioAdmision">
+                <form>
+                    <div>
+                        <fieldset> <legend>Admisión Alumnos</legend>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Télefono</label>
+                                  <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div>
+                                <label for="exampleDataList" class="form-label">Nivel</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                                <datalist id="datalistOptions">
+                                    <option value="Jardín-Granja">
+                                    <option value="Primaria">
+                                    <option value="Secundaria">
+                                </datalist>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                              </div> 
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+            <div class="imagenesDeExamenes">
+                <img class="imagenesDeExamenes__imagen" src="../imagenes/imagencambridgeesollogo.png" alt="logocambridge" width="320" height="180">
+                <img class="imagenesDeExamenes__imagen" src="../imagenes/imagenessarp.png" alt="logoessarp">
+                <img class="imagenesDeExamenes__imagen" src="../imagenes/imagenudslogo.png" alt="udslogo">
+                <img class="imagenesDeExamenes__imagen" src="../imagenes/imagenCELPE-BRAS.png" alt="celpelogo" width="300" height="110">
+            </div>
+            <footer class="piePagina"> 
+              <div>
+                  <ul class="piePagina__ul">
+                      <li> <a class="piePagina__a" href="index.html">Home</a> </li>
+                      <li> <a class="piePagina__a" href="secciones/seccionjardin-granja.html">Jardín-Granja</a> </li>
+                      <li> <a class="piePagina__a" href="secciones/seccionprimaria.html">Primaria</a> </li>
+                      <li> <a class="piePagina__a" href="secciones/seccionsecundaria.html">Secundaria</a> </li>
+                      <li> <a class="piePagina__a" href="secciones/seccionoldshakesperians.html">Old Shakespearians</a> </li>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="piePagina__ul">Contacto:
+                      <li class="telefono">4244.2270</li>
+                      <li class="telefono">4244.2219</li>
+                      <li class="telefono">4292.6142</li>
+                      <li class="mail">colegio@colegioshakespeare.com.ar</li>
+                  </ul>
+              </div> 
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
