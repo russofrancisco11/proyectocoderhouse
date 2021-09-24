@@ -12,11 +12,14 @@
     grid-template-areas: 
     "header header header header header"
     " . presentacion presentacion presentacion . "
-    " . article article article . "
+    " . article1 article1 foto1 . "
+    " . article2 article2 article2 . "
+    " . article3 article3 article3 . "
+    " . foto2 article4 article4 . "
     " . section section section . "
     "imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes"
     "footer footer footer footer footer";
-    grid-template-rows: 20vh auto auto auto auto 20vh;
+    grid-template-rows: 20vh auto auto auto auto auto auto auto 20vh;
     grid-template-columns: 10vw auto auto auto 10vw;
 }
 
@@ -33,10 +36,21 @@
     }
 }
 
-.article{
-    grid-area: article;
-    border: solid 3px;
-    padding: 3px;
+.article1{
+    grid-area: article1;
+    &__p{
+        margin: 5px;
+    }
+    &__h2{
+        color: $color-encabezados;
+    }
+    &__h5{
+        color: $color-encabezados;
+    }
+}
+
+.article2{
+    grid-area: article2;
     &__p{
         margin: 5px;
     }
@@ -44,14 +58,63 @@
         margin-left: 25px;
         margin-right: 5px;
     }
+    &__h2{
+        color: $color-encabezados;
+    }
+    &__h5{
+        color: $color-encabezados;
+    }
+}
+
+.article3{
+    grid-area: article3;
+    &__p{
+        margin: 5px;
+    }
+    &__ul{
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+    &__h2{
+        color: $color-encabezados;
+    }
+    &__h5{
+        color: $color-encabezados;
+    }
+}
+
+.article4{
+    grid-area: article4;
+    &__p{
+        margin: 5px;
+    }
+    &__h5{
+        color: $color-encabezados;
+    }
+    &__h5{
+        color: $color-encabezados;
+    }
+}
+
+.foto1{
+    grid-area: foto1;
+    align-content: center;
+}
+
+.foto2{
+    grid-area: foto2;
+    align-content: center;
 }
 
 .formularioAdmision{
     grid-area: section;
     border: solid 3px;
-    margin: 5px;
+    border-color: #003566;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px 10px;
     div{
-        margin: 5px;
+        margin: 2px;
     }
 }
 
@@ -89,10 +152,6 @@
 
 @media only screen and (max-width:1024px){
 
-    .encabezado{
-        font-size: $tamaño-letra-grande*0.75;
-    }
-
     .piePagina{
         font-size: $tamaño-letra-grande*0.75;
     }
@@ -111,21 +170,16 @@
         grid-template-columns: 100%;
     }
 
-    .encabezado{
-        &__navegacion{
-            width: 65%;
-            justify-content: flex-start;
-            &__a{
-                font-size: $tamaño-letra-grande*0.65;
-            }
-        }
-        &__logoShakespeare{
-            display: none;
-        }
-        &__escudoShakespeare{
-            display: block;
-            margin-left: 1rem;
-        }
+    .presentacion{
+        margin: 5px;
+    }
+
+    .article{
+        margin: 5px;
+    }
+
+    .formularioAdmision{
+        margin: 5px;
     }
 
     .imagenesDeExamenes{

@@ -14,8 +14,8 @@
 
 .grilla {
   display: grid;
-  grid-template-areas: "header header header header header" " . presentacion presentacion presentacion . " " . article article article . " " . section section section . " "imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes" "footer footer footer footer footer";
-  grid-template-rows: 20vh auto auto auto auto 20vh;
+  grid-template-areas: "header header header header header" " . presentacion presentacion presentacion . " " . article1 article1 foto1 . " " . article2 article2 article2 . " " . article3 article3 article3 . " " . foto2 article4 article4 . " " . section section section . " "imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes imagenesDeExamenes" "footer footer footer footer footer";
+  grid-template-rows: 20vh auto auto auto auto auto auto auto 20vh;
   grid-template-columns: 10vw auto auto auto 10vw; }
 
 .header {
@@ -28,22 +28,65 @@
     width: 100%;
     min-height: 700px; }
 
-.article {
-  grid-area: article;
-  border: solid 3px;
-  padding: 3px; }
-  .article__p {
+.article1 {
+  grid-area: article1; }
+  .article1__p {
     margin: 5px; }
-  .article__ul {
+  .article1__h2 {
+    color: crimson; }
+  .article1__h5 {
+    color: crimson; }
+
+.article2 {
+  grid-area: article2; }
+  .article2__p {
+    margin: 5px; }
+  .article2__ul {
     margin-left: 25px;
     margin-right: 5px; }
+  .article2__h2 {
+    color: crimson; }
+  .article2__h5 {
+    color: crimson; }
+
+.article3 {
+  grid-area: article3; }
+  .article3__p {
+    margin: 5px; }
+  .article3__ul {
+    margin-left: 25px;
+    margin-right: 5px; }
+  .article3__h2 {
+    color: crimson; }
+  .article3__h5 {
+    color: crimson; }
+
+.article4 {
+  grid-area: article4; }
+  .article4__p {
+    margin: 5px; }
+  .article4__h5 {
+    color: crimson; }
+  .article4__h5 {
+    color: crimson; }
+
+.foto1 {
+  grid-area: foto1;
+  align-content: center; }
+
+.foto2 {
+  grid-area: foto2;
+  align-content: center; }
 
 .formularioAdmision {
   grid-area: section;
   border: solid 3px;
-  margin: 5px; }
+  border-color: #003566;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px 10px; }
   .formularioAdmision div {
-    margin: 5px; }
+    margin: 2px; }
 
 .imagenesDeExamenes {
   display: flex;
@@ -72,8 +115,6 @@
     color: #fafafa; }
 
 @media only screen and (max-width: 1024px) {
-  .encabezado {
-    font-size: 15px; }
   .piePagina {
     font-size: 15px; } }
 
@@ -82,16 +123,12 @@
     grid-template-areas: "header" "presentacion" "article" "section" "footer";
     grid-template-rows: auto;
     grid-template-columns: 100%; }
-  .encabezado__navegacion {
-    width: 65%;
-    justify-content: flex-start; }
-    .encabezado__navegacion__a {
-      font-size: 13px; }
-  .encabezado__logoShakespeare {
-    display: none; }
-  .encabezado__escudoShakespeare {
-    display: block;
-    margin-left: 1rem; }
+  .presentacion {
+    margin: 5px; }
+  .article {
+    margin: 5px; }
+  .formularioAdmision {
+    margin: 5px; }
   .imagenesDeExamenes {
     display: none; }
   .piePagina {
