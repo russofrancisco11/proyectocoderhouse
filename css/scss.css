@@ -120,7 +120,7 @@
 
 @media only screen and (max-width: 768px) {
   .grilla {
-    grid-template-areas: "header" "presentacion" "article" "section" "footer";
+    grid-template-areas: "header" "presentacion" "article1" "foto1" "article2" "article3" "foto2" "article4" "section" "footer";
     grid-template-rows: auto;
     grid-template-columns: 100%; }
   .presentacion {
