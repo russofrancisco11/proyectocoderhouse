@@ -33,9 +33,11 @@
   .article1__p {
     margin: 5px; }
   .article1__h2 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
   .article1__h5 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
 
 .article2 {
   grid-area: article2; }
@@ -45,9 +47,11 @@
     margin-left: 25px;
     margin-right: 5px; }
   .article2__h2 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
   .article2__h5 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
 
 .article3 {
   grid-area: article3; }
@@ -57,18 +61,22 @@
     margin-left: 25px;
     margin-right: 5px; }
   .article3__h2 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
   .article3__h5 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
 
 .article4 {
   grid-area: article4; }
   .article4__p {
     margin: 5px; }
+  .article4__h2 {
+    color: crimson;
+    margin-left: 5px; }
   .article4__h5 {
-    color: crimson; }
-  .article4__h5 {
-    color: crimson; }
+    color: crimson;
+    margin-left: 5px; }
 
 .foto1 {
   grid-area: foto1;
@@ -125,8 +133,36 @@
     grid-template-columns: 100%; }
   .presentacion {
     margin: 5px; }
-  .article {
+  .article1__p {
     margin: 5px; }
+  .article1__h2 {
+    margin-left: 5px; }
+  .article1__h5 {
+    margin-left: 5px; }
+  .article2__p {
+    margin: 5px; }
+  .article2__ul {
+    margin-left: 25px;
+    margin-right: 5px; }
+  .article2__h2 {
+    margin-left: 5px; }
+  .article2__h5 {
+    margin-left: 5px; }
+  .article3__p {
+    margin: 5px; }
+  .article3__ul {
+    margin-left: 25px;
+    margin-right: 5px; }
+  .article3__h2 {
+    margin-left: 5px; }
+  .article3__h5 {
+    margin-left: 5px; }
+  .article4__p {
+    margin: 5px; }
+  .article4__h2 {
+    margin-left: 5px; }
+  .article4__h5 {
+    margin-left: 5px; }
   .formularioAdmision {
     margin: 5px; }
   .imagenesDeExamenes {

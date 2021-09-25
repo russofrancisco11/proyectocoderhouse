@@ -187,8 +187,60 @@
         margin: 5px;
     }
 
-    .article{
-        margin: 5px;
+    .article1{
+        &__p{
+            margin: 5px;
+        }
+        &__h2{
+            margin-left: 5px;
+        }
+        &__h5{
+            margin-left: 5px;
+        }
+    }
+    
+    .article2{
+        &__p{
+            margin: 5px;
+        }
+        &__ul{
+            margin-left: 25px;
+            margin-right: 5px;
+        }
+        &__h2{
+            margin-left: 5px;
+        }
+        &__h5{
+            margin-left: 5px;
+        }
+    }
+    
+    .article3{
+        &__p{
+            margin: 5px;
+        }
+        &__ul{
+            margin-left: 25px;
+            margin-right: 5px;
+        }
+        &__h2{
+            margin-left: 5px;
+        }
+        &__h5{
+            margin-left: 5px;
+        }
+    }
+    
+    .article4{
+        &__p{
+            margin: 5px;
+        }
+        &__h2{
+            margin-left: 5px;
+        }
+        &__h5{
+            margin-left: 5px;
+        }
     }
 
     .formularioAdmision{
