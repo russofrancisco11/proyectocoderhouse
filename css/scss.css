@@ -132,7 +132,8 @@
     grid-template-rows: auto;
     grid-template-columns: 2.5vw 95vw 2.5vw; }
   .presentacion {
-    margin: 5px; }
+    margin: 5px;
+    height: 100%; }
   .article1__p {
     margin: 10px; }
   .article1__h2 {
