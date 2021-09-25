@@ -169,18 +169,18 @@
 
     .grilla{
         grid-template-areas: 
-        "header"
-        "presentacion"
-        "article1"
-        "foto1"
-        "article2"
-        "article3"
-        "foto2"
-        "article4"
-        "section"
-        "footer";
+        "header header header"
+        "presentacion presentacion presentacion"
+        " . article1 . "
+        " . foto1 . "
+        " . article2 . "
+        " . article3 . "
+        " . foto2 . "
+        " . article4 . "
+        " . section . "
+        "footer footer footer";
         grid-template-rows: auto;
-        grid-template-columns: 100%;
+        grid-template-columns: 2.5% 95% 2.5%;
     }
 
     .presentacion{
