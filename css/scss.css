@@ -176,7 +176,7 @@
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   .grilla {
     grid-template-areas: "header header header" "presentacion presentacion presentacion" " . article1 . " " . foto1 . " " . article2 . " " . article3 . " " . foto2 . " " . article4 . " " . section . " "footer footer footer";
-    grid-template-rows: 80vh auto auto auto auto auto auto auto auto 80vh;
+    grid-template-rows: 35vh auto auto auto auto auto auto auto auto 35vh;
     grid-template-columns: 2.5vw 95vw 2.5vw; }
   .presentacion {
     margin: 5px;
