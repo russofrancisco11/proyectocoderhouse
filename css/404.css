@@ -1,0 +1,55 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    " . . . "
+    " . texto ."
+    " . foto . ";
+    grid-template-rows: 5vh auto auto;
+    grid-template-columns: 20vw auto 20vw;
+}
+
+.foto{
+    grid-area: foto;
+    justify-self: center;
+}
+
+.texto{
+    display: grid;
+    grid-area: texto;
+    justify-self: center;
+    margin: 15px;
+}
+
+.texto h1{
+    justify-self: center;
+}
+
+.texto p{
+    justify-self: center;
+}
+
+.texto button{
+    justify-self: center;
+}
+
+.texto button a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width:768px) {
+    .grilla{
+        grid-template-areas: 
+        " . . . "
+        " . texto . "
+        " . foto . ";
+        grid-template-rows:  5vh auto auto;
+        grid-template-columns: 3vw auto 3vw;
+    }
+}
