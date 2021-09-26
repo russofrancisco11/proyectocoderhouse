@@ -172,3 +172,48 @@
     font-size: 13px; }
     .piePagina__p {
       display: none; } }
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .grilla {
+    grid-template-areas: "header header header" "presentacion presentacion presentacion" " . article1 . " " . foto1 . " " . article2 . " " . article3 . " " . foto2 . " " . article4 . " " . section . " "footer footer footer";
+    grid-template-rows: 80vh auto auto auto auto auto auto auto auto 80vh;
+    grid-template-columns: 2.5vw 95vw 2.5vw; }
+  .presentacion {
+    margin: 5px;
+    height: 100%; }
+  .article1__p {
+    margin: 10px; }
+  .article1__h2 {
+    margin-left: 10px; }
+  .article1__h5 {
+    margin-left: 10px; }
+  .article2__p {
+    margin: 10px; }
+  .article2__ul {
+    margin-left: 25px;
+    margin-right: 5px; }
+  .article2__h2 {
+    margin-left: 10px; }
+  .article2__h5 {
+    margin-left: 10px; }
+  .article3__p {
+    margin: 5px; }
+  .article3__ul {
+    margin-left: 25px;
+    margin-right: 5px; }
+  .article3__h2 {
+    margin-left: 10px; }
+  .article3__h5 {
+    margin-left: 10px; }
+  .article4__p {
+    margin: 10px; }
+  .article4__h2 {
+    margin-left: 10px; }
+  .article4__h5 {
+    margin-left: 10px; }
+  .formularioAdmision {
+    margin: 5px; }
+  .imagenesDeExamenes {
+    display: none; }
+  .piePagina {
+    font-size: 13px; } }
